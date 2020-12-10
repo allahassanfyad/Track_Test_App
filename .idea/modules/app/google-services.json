@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "414804611077",
+    "project_id": "tracktestapp-c38bb",
+    "storage_bucket": "tracktestapp-c38bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:414804611077:android:759a0c8e602e6a717c4c6c",
+        "android_client_info": {
+          "package_name": "com.track_test_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "414804611077-jadt96d8et2m2fhp8p21ek7fgbi7t4r0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.track_test_app",
+            "certificate_hash": "e5b61228440b756f4639fabe71194f688586e242"
+          }
+        },
+        {
+          "client_id": "414804611077-lpreghfqe20e259tiq2ctpc8ahm618ug.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtzIVJwfcRI3RwhSrm4jPmy0669-FBvDU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "414804611077-lpreghfqe20e259tiq2ctpc8ahm618ug.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

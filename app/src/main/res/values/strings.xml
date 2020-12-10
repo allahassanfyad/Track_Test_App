@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Track_Test_App</string>
+    <string name="new_user">New User?</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="password">Password</string>
+    <string name="enter_phone">Please Enter Your Phone</string>
+    <string name="enter_password">Please Enter Your Password</string>
+    <string name="create_account">Create account</string>
+    <string name="have_account">Have Account?</string>
+    <string name="login">Login</string>
+</resources>

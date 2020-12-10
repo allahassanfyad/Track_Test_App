@@ -1,0 +1,171 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.track_test_app"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dexOptions {
+        preDexLibraries = false
+        javaMaxHeapSize = "4g"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    repositories {
+
+        maven { url 'https://jitpack.io' }
+
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.firebase:firebase-database:19.4.0'
+    implementation 'com.google.firebase:firebase-firestore:19.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.navigation:navigation-fragment:2.0.0'
+    implementation 'androidx.navigation:navigation-ui:2.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+
+
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'com.google.android.material:material:1.2.0-alpha01'
+    implementation 'com.google.android.material:material:1.0.0'
+
+
+    implementation 'com.mikhaellopez:circularimageview:4.0.2'
+
+
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.android.support:multidex:1.0.3'
+
+    implementation 'com.android.support:multidex:2.0.1'
+
+
+    //library for the size and marge
+
+    implementation 'com.intuit.sdp:sdp-android:1.0.5'
+    implementation 'com.intuit.ssp:ssp-android:1.0.5'
+
+    // VerifyEditText
+    implementation 'com.github.cirno-poi:VerifyEditText:1.0.0'
+
+    //Custom Toast Library
+    implementation 'com.github.GrenderG:Toasty:1.4.2'
+
+    //lotti
+    implementation 'com.airbnb.android:lottie:3.3.1'
+
+    //Intro View Indicator
+    implementation 'com.romandanylyk:pageindicatorview:1.0.3@aar'
+
+    // animation library
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+
+    //  FACEBOOK LOGIN
+    implementation 'com.facebook.android:facebook-login:5.15.3'
+
+    //  GMAIL LOGIN
+    implementation 'com.google.android.gms:play-services-auth:18.0.0'
+    implementation 'com.googlecode.libphonenumber:libphonenumber:8.9.7'
+
+    //crop library
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.5.1'
+
+    // picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //Segmented RadioRealButton
+    implementation 'com.github.addisonelliott:SegmentedButton:3.1.8'
+
+    //Facebook Loading Library shimmer
+//    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    implementation 'com.github.sharish:ShimmerRecyclerView:v1.3'
+    implementation 'com.facebook.shimmer:shimmer:0.1.0@aar'
+
+    // Add the Firebase SDK for Google Analytics
+    implementation 'com.google.firebase:firebase-analytics:17.2.3'
+
+    // Add Firebase
+    implementation 'com.google.firebase:firebase-messaging:20.1.5'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+    implementation 'com.google.firebase:firebase-auth:19.3.0'
+    implementation 'com.google.firebase:firebase-core:17.5.0'
+    implementation 'com.firebaseui:firebase-ui-firestore:4.2.1'
+    // floating hint
+    implementation "com.google.android.material:material:1.0.0-beta01"
+
+
+    //expendable TextView for FAQ
+    implementation 'com.ms-square:expandableTextView:0.1.4'
+    implementation 'net.cachapa.expandablelayout:expandablelayout:2.9.2'
+
+
+    //maps library
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.libraries.places:places:2.2.0'
+
+
+    // Add the Firebase SDK for Google Analytics
+    implementation 'com.google.firebase:firebase-analytics:17.2.3'
+
+    //    Retrofit library
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+//    Retrofit gson Conveter factory
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.2.1'
+
+
+    // spinner hint
+    implementation 'me.srodrigo:androidhintspinner:1.0.0'
+
+    //BARCODE SCANNER
+    implementation 'me.dm7.barcodescanner:zxing:1.9.13'
+    implementation 'me.dm7.barcodescanner:zbar:1.9.13'
+
+    //ago time
+    implementation 'com.github.curioustechizen.android-ago:library:1.4.0'
+
+    implementation 'org.greenrobot:eventbus:3.0.0'
+
+    //PayPal SDK
+    implementation 'com.paypal.sdk:paypal-android-sdk:2.15.3'
+
+}

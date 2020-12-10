@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.track_test_app.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo_svg" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_55sdp"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:layout_marginEnd="@dimen/_55sdp"
+                    app:hintTextAppearance="@style/HintText">
+
+                    <EditText
+                        android:id="@+id/editPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/raduis_all_with_strok"
+                        android:fontFamily="@font/segoe"
+                        android:gravity="center"
+                        android:hint="@string/mobile_number"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textSize="@dimen/_14sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_55sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_55sdp"
+                    app:hintTextAppearance="@style/HintText"
+
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/editPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:background="@drawable/raduis_all_with_strok"
+                            android:fontFamily="@font/segoe"
+                            android:gravity="center"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textSize="@dimen/_14sdp" />
+
+
+                        <ImageView
+                            android:id="@+id/showpassword"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginEnd="0dp"
+                            android:scaleX=".4"
+                            android:scaleY=".4"
+                            android:src="@drawable/invisible_svg" />
+                    </RelativeLayout>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/btnSignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_36sdp"
+                    android:layout_marginStart="@dimen/_60sdp"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:layout_marginEnd="@dimen/_60sdp"
+                    android:background="@drawable/raduis_all_with_strok_hard"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:fontFamily="@font/segoe"
+                    android:text="@string/login"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorw"
+                    android:textSize="@dimen/_17sdp" />
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="@dimen/_45sdp"-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    android:gravity="center"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:weightSum="1">-->
+
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:fontFamily="@font/segoe"-->
+<!--                        android:gravity="start|center_vertical"-->
+<!--                        android:paddingStart="@dimen/_5sdp"-->
+<!--                        android:paddingEnd="@dimen/_5sdp"-->
+<!--                        android:text="@string/new_user"-->
+<!--                        android:textColor="@color/colorAccent"-->
+<!--                        android:textSize="@dimen/_12sdp"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/txtCreateAccount"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:fontFamily="@font/segoe"-->
+<!--                        android:gravity="end|center_vertical"-->
+<!--                        android:paddingEnd="0dp"-->
+<!--                        android:text="@string/create_account"-->
+<!--                        android:textColor="@color/colorPrimaryDark"-->
+<!--                        android:textSize="@dimen/_12sdp"-->
+<!--                        android:textStyle="bold" />-->
+
+
+<!--                </LinearLayout>-->
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:id="@+id/loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorTransparentLoading"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_gravity="center"
+                android:indeterminateTint="@color/colorPrimary" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

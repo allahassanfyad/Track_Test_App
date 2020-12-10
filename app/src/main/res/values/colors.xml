@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#17c9c9</color>
+    <color name="colorPrimaryDark">#1ab64f</color>
+    <color name="colorAccent">#162951</color>
+    <color name="colorb">#000000</color>
+    <color name="colorw">#FFFFFF</color>
+    <color name="colorGray">#F3F3F3</color>
+    <color name="colorGray5">#f5f5f5</color>
+    <color name="colorGray7">#f7f7f7</color>
+    <color name="colorTransparentLoading">#48000000</color>
+    <color name="colorGrayBorder">#707070</color>
+    <color name="colorGray2">#B8B8B8</color>
+    <color name="colorStroke">#d1d0d0</color>
+    <color name="colorGrayLight">#f8f8f8</color>
+    <color name="colorRed">#ed3802</color>
+    <color name="colorYellow">#fceda8</color>
+    <color name="colorSearchTint">#33000000</color>
+    <color name="colorGray6">#c4c2c2</color>
+    <color name="colorGray3">#66000000</color>
+    <color name="colorGray4">#6af4f4f4</color>
+    <color name="colorYellowDark">#fee361</color>
+    <color name="colorYellowStar">#ff9a27</color>
+    <color name="colorBlue">#272c5f</color>
+    <color name="actionbar_opacity">#33000000</color>
+    <color name="colorGray8">#f1f1f1</color>
+    <color name="colorBlue1">#3ed2d2</color>
+
+</resources>
